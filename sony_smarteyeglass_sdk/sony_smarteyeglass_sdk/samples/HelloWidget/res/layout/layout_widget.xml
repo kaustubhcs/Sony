@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- px is used since this is a layout for the accessory display. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:ignore="PxUsage,Overdraw" >
+
+    <TextView
+        android:id="@+id/helloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3px"
+        android:text="@string/hello"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="36px" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/helloText"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="5px"
+        android:layout_marginRight="3px"
+        android:src="@drawable/icon_extension"/>
+
+</RelativeLayout>

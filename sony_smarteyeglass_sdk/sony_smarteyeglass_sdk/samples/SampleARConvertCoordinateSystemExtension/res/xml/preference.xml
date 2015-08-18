@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Read me -->
+    <Preference
+        android:key="@string/preference_key_read_me"
+        android:title="@string/preference_option_read_me" />
+
+    <Preference
+        android:key="@string/preference_key_here_point"
+        android:title="Origin Point" />
+    <Preference
+        android:key="@string/preference_key_destination_point"
+        android:title="Destination Point" />
+    <Preference
+        android:key="@string/preference_key_reset_button"
+        android:title="@string/preference_option_reset_button" />"
+
+</PreferenceScreen>

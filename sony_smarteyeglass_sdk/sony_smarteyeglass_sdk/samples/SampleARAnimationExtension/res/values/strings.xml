@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No translation of sample extensions -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!-- Name of app, shown when installing/uninstalling extension -->
+    <string name="app_name">Sample AR Animation Extension</string>
+    <!-- Title of preference activity -->
+    <string name="preference_activity_title">Sample AR Animation Extension</string>
+    <!-- Name of extension, shown in preferences -->
+    <string name="extension_name">Sample AR Animation</string>
+    <!-- Configuration title shown in preferences -->
+    <string name="configuration_text">Sample AR Animation Extension</string>
+    <!-- Menu option shown in preferences -->
+    <string name="preference_option_read_me">READ ME</string>
+    <!-- Read me text shown in dialog -->
+    <string name="preference_option_read_me_txt">The Sample AR Animation extension tests the AR system of the animation on the SmartEyeglass device.
+                                                 Image seen in the direction of the head will change.</string>
+</resources>

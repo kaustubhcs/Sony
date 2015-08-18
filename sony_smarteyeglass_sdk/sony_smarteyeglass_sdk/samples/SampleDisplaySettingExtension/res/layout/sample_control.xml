@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/smarteyeglass_control_width"
+    android:layout_height="@dimen/smarteyeglass_control_height"
+    tools:ignore="ContentDescription" >
+
+    <!-- No content description since layout is for accessory. -->
+    <LinearLayout
+        android:id="@+id/text_view_are"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.sonyericsson.extras.liveware.extension.util.AefTextView
+            android:id="@+id/sample_control_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/smarteyeglass_text_size_small" />
+
+        <com.sonyericsson.extras.liveware.extension.util.AefTextView
+            android:id="@+id/sample_control_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/smarteyeglass_text_size_small" />
+
+        <com.sonyericsson.extras.liveware.extension.util.AefTextView
+            android:id="@+id/sample_control_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/smarteyeglass_text_size_small" />
+
+        <com.sonyericsson.extras.liveware.extension.util.AefTextView
+            android:id="@+id/sample_control_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/smarteyeglass_text_size_small" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_toRightOf="@id/text_view_are" >
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

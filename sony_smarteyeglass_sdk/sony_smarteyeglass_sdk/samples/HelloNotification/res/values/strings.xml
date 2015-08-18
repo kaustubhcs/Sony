@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No translation of sample extensions -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">Hello Notification</string>
+    <!-- Title of preference activity -->
+    <string name="preference_activity_title">Hello Notification Settings</string>
+    <!-- Configuration text shown in preferences -->
+    <string name="configuration_text">Hello Notification Settings</string>
+    <!-- Extension name, shown in preferences -->
+    <string name="extension_name">Hello Notification</string>
+    <!-- Name of source, shown in preferences -->
+    <string name="source_name">Notification source</string>
+    <!-- Action Toasts, shown on accessory -->
+    <string name="action_event_1">Action Toast 1</string>
+    <string name="action_event_2">Action Toast 2</string>
+    <string name="action_event_3">Action Toast 3</string>
+
+    <!-- Text that is read before the display name on accessories that supports text to speech -->
+    <string name="text_to_speech">New notification event from</string>
+    <string name="preference_option_read_me">READ ME</string>
+    <string name="preference_key_read_me">preference_key_read_me</string>
+    <string name="preference_option_read_me_txt">Tap [Send a notification] to send a new notification to the accessory.\n\nTap [Clear all notifications] to remove all notifications.</string>
+    <string name="preference_option_clear">Clear all notifications</string>
+    <string name="preference_option_clear_txt">"All notifications on the accessory will be cleared, continue?"</string>
+    <string name="preference_key_clear">preference_key_clear</string>
+    <string name="clear_success">All notifications have been cleared</string>
+    <string name="clear_failure">Failed to clear notifications</string>
+    <string name="preference_option_send">Send a notification</string>
+    <string name="preference_key_send">preference_key_send</string>
+
+</resources>

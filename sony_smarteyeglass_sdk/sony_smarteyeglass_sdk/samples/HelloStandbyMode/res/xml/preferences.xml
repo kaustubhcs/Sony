@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Read me -->
+    <Preference
+        android:key="@string/preference_key_read_me"
+        android:title="@string/preference_option_read_me" />
+
+    <!-- Setting standby permission -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/preference_key_standby_permission"
+        android:title="@string/preference_setting_title" />
+
+</PreferenceScreen>

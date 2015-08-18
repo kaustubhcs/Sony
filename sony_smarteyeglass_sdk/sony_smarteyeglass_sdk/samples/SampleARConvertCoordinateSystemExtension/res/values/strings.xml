@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No translation of sample extensions -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- Name of app, shown when installing/uninstalling extension -->
+    <string name="app_name">Sample AR Convert Coordinate System Extension</string>
+    <!-- Title of preference activity -->
+    <string name="preference_activity_title">Sample AR Convert Coordinate System Extension Settings</string>
+    <!-- Name of extension, shown in preferences -->
+    <string name="extension_name">Sample AR Convert Coordinate System Extension</string>
+    <!-- Configuration title shown in preferences -->
+    <string name="configuration_text">Sample AR Convert Coordinate System Extension Settings</string>
+    <!-- Menu option shown in preferences -->
+    <string name="preference_option_read_me">READ ME</string>
+    <!-- Read me text shown in dialog -->
+    <string name="preference_option_read_me_txt">The Sample AR Convert Coordinate System extension tests the AR system on the SmartEyeglass device.
+                                                 Assign an origin and a destination, set the image toward that direction.\n</string>
+
+    <string name="preference_key_read_me">preference_key_read_me</string>
+    <string name="preference_key_sensor_type">preference_key_sensor_type</string>
+
+    <string name="preference_key_here_point">preference_key_here_point</string>
+    <string name="preference_key_destination_point">preference_key_destination_point</string>
+
+    <string name="preference_key_here_latitude">preference_key_here_latitude</string>
+    <string name="preference_option_here_latitude">Origin Latitude</string>
+
+    <string name="preference_key_here_longitude">preference_key_here_longitude</string>
+    <string name="preference_option_here_longitude">Origin Longitude</string>
+
+    <string name="preference_key_destination_latitude">preference_key_destination_latitude</string>
+    <string name="preference_option_destination_latitude">Destination Latitude</string>
+
+    <string name="preference_key_destination_longitude">preference_key_destination_longitude</string>
+    <string name="preference_option_destination_longitude">Destination Longitude</string>
+
+    <string name="preference_key_reset_button">preference_key_reset_button</string>
+    <string name="preference_option_reset_button">Reset Settings</string>
+    <string name="preference_option_reset_button_text">Do you want to reset the latitude and longitude values?</string>
+
+</resources>

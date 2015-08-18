@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No translation of sample extensions -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Sample Power Mode Extension</string>
+    <!-- Title of preference activity -->
+    <string name="preference_activity_title">Sample Power Mode Settings</string>
+    <!-- Configuration text shown in preferences -->
+    <string name="configuration_text">Sample Power Mode Extension Settings</string>
+    <!-- Extension name, shown in preferences -->
+    <string name="extension_name">Sample Power Mode Switcher</string>
+
+    <string name="preference_option_read_me">READ ME</string>
+    <string name="preference_key_read_me">preference_key_read_me</string>
+    <string name="preference_option_read_me_txt">Sample Power Mode demonstrates how to programmatically enable/disable Power Mode Settings.
+                                             \n\nOn the SmartEyeglass accessory, Low Power Mode is the default and this mode uses Bluetooth connectivity.
+                                                 High Power Mode uses WiFi connectivity.</string>
+</resources>

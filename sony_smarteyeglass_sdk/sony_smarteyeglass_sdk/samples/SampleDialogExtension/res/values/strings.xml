@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No translation of sample extensions -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- Name of app, shown when installing/uninstalling extension -->
+    <string name="app_name">Sample Dialog Extension</string>
+    <!-- Title of preference activity -->
+    <string name="preference_activity_title">Sample Dialog Extension Settings</string>
+    <!-- Name of extension, shown in preferences -->
+    <string name="extension_name">Sample Dialog</string>
+    <!-- Configuration title shown in preferences -->
+    <string name="configuration_text">Sample Dialog Extension Settings</string>
+    <!-- Menu option shown in preferences -->
+    <string name="preference_option_read_me">READ ME</string>
+    <!-- Read me text shown in dialog -->
+    <string name="preference_option_read_me_txt">The Sample Dialog Extension lauches different types of dialogs through touch sensor operation.</string>
+    <string name="how_to_use_Title_text">Choose a dialog : </string>
+    <string name="how_to_use_Tap_text">Tap to show a Custom dialog.</string>
+    <string name="how_to_use_Left_text">Swipe Left for a Timeout dialog.</string>
+    <string name="how_to_use_Right_text">Swipe Right for an OK dialog.</string>
+    <string name="dialog_Closed_text">Selected button id : </string>
+    <string name="dialog_title">Dialog Title</string>
+    <string name="tap_dialog_message">Set as many as 3 buttons</string>
+    <string name="time_out_dialog_message">This automatically closes after 5 secs</string>
+    <string name="only_ok_button_dialog_message">This shows text and an OK button</string>
+    <string name="preference_key_read_me">preference_key_read_me</string>
+</resources>

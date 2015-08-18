@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No translation of sample extensions -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">Sample Display Setting Extension</string>
+    <!-- Title of preference activity -->
+    <string name="preference_activity_title">Sample Display Setting Extension settings</string>
+    <!-- Configuration text shown in preferences -->
+    <string name="configuration_text">Sample Display Setting Extension settings</string>
+    <!-- Extension name, shown in preferences -->
+    <string name="extension_name">Sample Display Setting</string>
+    <string name="preference_option_read_me">READ ME</string>
+    <string name="preference_key_read_me">preference_key_read_me</string>
+    <string name="preference_option_read_me_txt">The SampleDisplaySetting extension demonstrates how to enable the Safe Mode display and change the screen depth of the accessory\'s display.</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/smarteyeglass_control_width"
+    android:layout_height="@dimen/smarteyeglass_control_height"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription" >
+    <!-- No content description since layout is for accessory. -->
+
+    <com.sonyericsson.extras.liveware.extension.util.AefTextView
+        android:id="@+id/display_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/smarteyeglass_text_size_small" />
+
+</LinearLayout>

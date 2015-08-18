@@ -1,0 +1,33 @@
+-------------------------------
+# Features shown in this sample
+-------------------------------
+* UI based on a bitmap layout
+* Interaction using a bitmap layout
+* Collecting accelerometer sensor data
+* Collecting gyroscope sensor data
+* Collecting magnetic field sensor data
+* Collecting light sensor data
+
+-----------------------------
+# Notes
+-----------------------------
+* This sample code is intended for SmartEyeglass
+
+-----------------------------
+# Dependencies
+-----------------------------
+Three (3) Android library projects should be set as dependencies in the project
+properties:
+
+
+SmartEyeglassAPI
+ - is an Android library project which contains the API for SmartEyeglass. This
+   library project has a dependency to SmartExtensionUtils.
+
+SmartExtensionUtils
+ - is an Android library project which contains the helper classes that simplify
+   extension development. The SmartExtensionUtils project has a dependency to the
+   SmartExtensionAPI Android library project.
+
+SmartExtensionAPI
+ - is an Android library project which contains the SmartExtensions API.

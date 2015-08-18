@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No translation of sample extensions -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Hello Widget Extension</string>
+    <!-- Title of preference activity -->
+    <string name="preference_activity_title">Hello Widget Settings</string>
+    <!-- Configuration text shown in preferences -->
+    <string name="configuration_text">Hello Widget Settings</string>
+    <!-- Extension name, shown in preferences -->
+    <string name="extension_name">Hello Widget</string>
+    <string name="preference_option_read_me">READ ME</string>
+    <string name="preference_key_read_me">preference_key_read_me</string>
+    <string name="preference_option_read_me_txt">The Hello Widget displays a simple layout. The widget is only compatible with WidgetAPI 3 and up</string>
+    <string name="hello">Hello!</string>
+    <string name="text_control">If you don\'t use Control API, you cannot display the widget on the SmartEyeglass.</string>
+</resources>

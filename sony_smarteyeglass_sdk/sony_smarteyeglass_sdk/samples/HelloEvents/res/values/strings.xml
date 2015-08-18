@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No translation of sample extensions -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- Name of app, shown when installing/uninstalling extension -->
+    <string name="app_name">Hello Events</string>
+    <!-- Title of preference activity -->
+    <string name="preference_activity_title">Hello Events settings</string>
+    <!-- Name of extension, shown in preferences -->
+    <string name="extension_name">Hello Events</string>
+    <!-- Configuration title shown in preferences -->
+    <string name="configuration_text">Hello Events settings</string>
+    <!-- Menu option shown in preferences -->
+    <string name="preference_option_read_me">READ ME</string>
+    <!-- Read me text shown in dialog -->
+    <string name="preference_option_read_me_txt">The Hello Events extension gives feedback when touching the SmartEyeglass touchpad or pressing buttons.</string>
+
+    <!-- Text shown in Control -->
+    <string name="touch_action_press">TOUCH_ACTION_PRESS</string>
+    <string name="touch_action_release">TOUCH_ACTION_RELEASE</string>
+    <string name="touch_action_longpress">TOUCH_ACTION_LONGPRESS</string>
+
+    <string name="swipe_direction_down">SWIPE_DIRECTION_DOWN</string>
+    <string name="swipe_direction_up">SWIPE_DIRECTION_UP</string>
+    <string name="swipe_direction_right">SWIPE_DIRECTION_RIGHT</string>
+    <string name="swipe_direction_left">SWIPE_DIRECTION_LEFT</string>
+
+    <string name="keycode_back">KEYCODE_BACK</string>
+    <string name="keycode_camera">KEYCODE_CAMERA</string>
+    <string name="keycode_ptt">KEYCODE_PTT</string>
+
+    <string name="key_action_press">KEY_ACTION_PRESS</string>
+    <string name="key_action_release">KEY_ACTION_RELEASE</string>
+    <string name="key_action_repeat">KEY_ACTION_REPEAT</string>
+
+    <string name="tap_action_single_tap">TAP_ACTION_SINGLE_TAP</string>
+
+    <string name="unknown">unknown</string>
+    <string name="empty"></string>
+
+</resources>

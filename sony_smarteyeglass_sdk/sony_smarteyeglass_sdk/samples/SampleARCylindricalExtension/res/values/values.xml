@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ICON_SESSION_ID">100</integer>
+    <string name="POSH_OFFSET">18.234f</string>
+    <integer name="CYLINDRINCAL_OBJ_ORDER">1</integer>
+</resources>
