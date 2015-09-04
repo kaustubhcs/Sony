@@ -44,8 +44,6 @@ public final class ExtensionReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, final Intent intent) {
-        Log.d("KTB2 CALL", "ExtensionReceiver // onReceive");
-
         Log.d(Constants.LOG_TAG, "onReceive: " + intent.getAction());
         intent.setClass(context, SampleExtensionService.class);
         context.startService(intent);

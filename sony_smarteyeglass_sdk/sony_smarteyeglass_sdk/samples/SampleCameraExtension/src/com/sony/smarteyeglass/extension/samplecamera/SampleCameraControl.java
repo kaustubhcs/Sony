@@ -80,7 +80,6 @@ public final class SampleCameraControl extends ControlExtension {
             @Override
             public void onCameraReceived(final CameraEvent event) {
                 mode.handleCameraEvent(event);
-
             }
             // Called when camera operation has failed
             // We just log the error

@@ -66,37 +66,23 @@ public final class JpegStreamMode extends AbstractMovieMode {
 
     @Override
     protected void willHandleEvent(final CameraEvent ev) {
-        Log.d("KTB2 CALL", "JpegStreamMode // willHandleEvent");
-
         Log.d(Constants.LOG_TAG, "Stream Event coming: " + ev);
-
     }
 
     @Override
-    public int getRecordingMode()
-    {
-        Log.d("KTB2 CALL", "JpegStreamMode // getRecordingMode");
-        Log.d("KTB2 CALL", "The current mode is = " + mode);
-
+    public int getRecordingMode() {
         return mode;
     }
 
     @Override
     protected void addMessages(final List<String> list) {
-        Log.d("KTB2 CALL", "addMessages");
-
         list.add("Rec: " + getSaver().getIndex());
     }
 
     @Override
     protected void willOpenCamera(final SmartEyeglassControlUtils utils)
             throws ControlCameraException {
-
         Log.d(Constants.LOG_TAG, "startCamera ");
-
-        Log.d("KTB2 CALL", "willOpenCamera");
-
-
         utils.startCamera();
         if (!saves()) {
             return;

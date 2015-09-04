@@ -32,7 +32,6 @@ Copyright (c) 2014, Sony Corporation
 package com.sony.smarteyeglass.extension.samplecamera;
 
 import android.graphics.Bitmap;
-import android.util.Log;
 
 /**
  * Provides the way to display a bitmap.
@@ -45,6 +44,5 @@ public interface BitmapDisplay {
      * @param bitmap
      *            The bitmap to display.
      */
-
     void displayBitmap(Bitmap bitmap);
 }

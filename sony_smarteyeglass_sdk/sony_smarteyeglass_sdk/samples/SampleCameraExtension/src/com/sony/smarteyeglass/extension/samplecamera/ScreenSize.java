@@ -33,7 +33,6 @@ package com.sony.smarteyeglass.extension.samplecamera;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.util.Log;
 
 /**
  * Provides screen size.
@@ -57,22 +56,11 @@ public final class ScreenSize {
      * @param context An application context.
      */
     public ScreenSize(final Context context) {
-        Log.d("KTB2 CALL" , "ScreenSize");
-
         this.context = context;
         Resources res = context.getResources();
-
-
-        // KTB INFLICTED CHANGES
-
-        Log.d("KTB2", "Getting width and height");
         width = res.getDimensionPixelSize(R.dimen.smarteyeglass_control_width);
         height = res.getDimensionPixelSize(
                 R.dimen.smarteyeglass_control_height);
-
-        //width = 1920;
-       // height = 1080;
-
     }
 
     /**
