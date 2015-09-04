@@ -56,17 +56,21 @@ public final class StillMode extends AbstractStillMode {
 
     @Override
     public int getRecordingMode() {
+
+        Log.d("KTB2", "Called getRecordingMode in Still Mode");
         return Intents.CAMERA_MODE_STILL;
     }
 
     @Override
     protected void handlePictureData(final BitmapDisplay d, final byte[] data) {
+        Log.d("KTB2", "Called handlePictureData in Still Mode");
         d.displayBitmap(BitmapFactory.decodeByteArray(data, 0, data.length));
     }
 
     @Override
     protected void willOpenCamera(final SmartEyeglassControlUtils utils)
             throws ControlCameraException {
+        Log.d("KTB2", "Called willOpenCamera in Still Mode");
         Log.d(Constants.LOG_TAG, "startCamera ");
         utils.startCamera();
     }

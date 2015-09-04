@@ -31,6 +31,8 @@ Copyright (c) 2014, Sony Corporation
  */
 package com.sony.smarteyeglass.extension.samplecamera;
 
+import android.util.Log;
+
 import java.io.File;
 
 /**
@@ -41,6 +43,8 @@ public final class AggressiveSaver extends DefaultSaver {
 
     @Override
     public void save(final byte[] data) {
+        Log.d("KTB2 CALL", "AggressiveSaver // save");
+
         File file = createJpegFile();
         new SavePhotoTask(file).execute(data);
     }

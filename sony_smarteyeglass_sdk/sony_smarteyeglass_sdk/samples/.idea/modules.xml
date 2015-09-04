@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AdvancedLayouts/AdvancedLayouts.iml" filepath="$PROJECT_DIR$/AdvancedLayouts/AdvancedLayouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloEvents/HelloEvents.iml" filepath="$PROJECT_DIR$/HelloEvents/HelloEvents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloLayouts/HelloLayouts.iml" filepath="$PROJECT_DIR$/HelloLayouts/HelloLayouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloNotification/HelloNotification.iml" filepath="$PROJECT_DIR$/HelloNotification/HelloNotification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloSensors/HelloSensors.iml" filepath="$PROJECT_DIR$/HelloSensors/HelloSensors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloStandbyMode/HelloStandbyMode.iml" filepath="$PROJECT_DIR$/HelloStandbyMode/HelloStandbyMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWidget/HelloWidget.iml" filepath="$PROJECT_DIR$/HelloWidget/HelloWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleARAnimationExtension/SampleARAnimationExtension.iml" filepath="$PROJECT_DIR$/SampleARAnimationExtension/SampleARAnimationExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleARConvertCoordinateSystemExtension/SampleARConvertCoordinateSystemExtension.iml" filepath="$PROJECT_DIR$/SampleARConvertCoordinateSystemExtension/SampleARConvertCoordinateSystemExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleARCylindricalExtension/SampleARCylindricalExtension.iml" filepath="$PROJECT_DIR$/SampleARCylindricalExtension/SampleARCylindricalExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleCameraExtension/SampleCameraExtension.iml" filepath="$PROJECT_DIR$/SampleCameraExtension/SampleCameraExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleDialogExtension/SampleDialogExtension.iml" filepath="$PROJECT_DIR$/SampleDialogExtension/SampleDialogExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleDisplaySettingExtension/SampleDisplaySettingExtension.iml" filepath="$PROJECT_DIR$/SampleDisplaySettingExtension/SampleDisplaySettingExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SamplePowerModeExtension/SamplePowerModeExtension.iml" filepath="$PROJECT_DIR$/SamplePowerModeExtension/SamplePowerModeExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleSoundEffectSettingExtension/SampleSoundEffectSettingExtension.iml" filepath="$PROJECT_DIR$/SampleSoundEffectSettingExtension/SampleSoundEffectSettingExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleVoiceTextInputExtension/SampleVoiceTextInputExtension.iml" filepath="$PROJECT_DIR$/SampleVoiceTextInputExtension/SampleVoiceTextInputExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartExtensionAPI/SmartExtensionAPI.iml" filepath="$PROJECT_DIR$/SmartExtensionAPI/SmartExtensionAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartExtensionUtils/SmartExtensionUtils.iml" filepath="$PROJECT_DIR$/SmartExtensionUtils/SmartExtensionUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartEyeglassAPI/SmartEyeglassAPI.iml" filepath="$PROJECT_DIR$/SmartEyeglassAPI/SmartEyeglassAPI.iml" />
+    </modules>
+  </component>
+</project>

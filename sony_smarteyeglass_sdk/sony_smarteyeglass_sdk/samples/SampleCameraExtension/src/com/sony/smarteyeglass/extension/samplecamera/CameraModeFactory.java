@@ -32,6 +32,7 @@ Copyright (c) 2014, Sony Corporation
 package com.sony.smarteyeglass.extension.samplecamera;
 
 import android.content.Context;
+import android.util.Log;
 
 /**
  * Constants to create the camera mode.
@@ -41,7 +42,10 @@ public enum CameraModeFactory {
     /** The Still mode. */
     STILL {
         @Override
-        public AbstractCameraMode of(final Context context) {
+        public AbstractCameraMode of(final Context context)
+        {
+            Log.d("KTB2 CALL", "Camera Mode Factory -- AbstractCameraMode");
+
             return new StillMode(context);
         }
     },

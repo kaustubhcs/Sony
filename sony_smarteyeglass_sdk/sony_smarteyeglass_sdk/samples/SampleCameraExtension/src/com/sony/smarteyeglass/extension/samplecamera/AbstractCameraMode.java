@@ -35,6 +35,7 @@ import java.util.List;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
@@ -49,6 +50,9 @@ import com.sony.smarteyeglass.extension.util.SmartEyeglassControlUtils;
  */
 public abstract class AbstractCameraMode {
 
+
+
+
     /** The delegate to save data. */
     private final Saver saver;
 
@@ -59,14 +63,17 @@ public abstract class AbstractCameraMode {
     private final DisplayPainter painter;
 
     /** Whether the camera is currently open. */
-    private boolean cameraOpened = false;
+    public boolean cameraOpened = false;
 
     /**
+     * Creates a an instance of this class.
      * Creates a an instance of this class.
      *
      * @param context  The application context.
      */
     protected AbstractCameraMode(final Context context) {
+
+        Log.d("KTB2 CALL" , "AbstractCameraMode");
         painter = new DisplayPainter(context);
         SharedPreferences prefs =
                 PreferenceManager.getDefaultSharedPreferences(context);
@@ -98,6 +105,9 @@ public abstract class AbstractCameraMode {
      * @param ev    The camera event.
      */
     protected void willHandleEvent(final CameraEvent ev) {
+        Log.d("KTB2 CALL" , "willHandleEvent");
+
+//        Log.d("KTB2", ev.toString());
     }
 
     /**
@@ -108,8 +118,12 @@ public abstract class AbstractCameraMode {
      * @param delegate  The delegate to display a bitmap.
      * @param data      The JPEG data.
      */
-    protected void handlePictureData(
-            final BitmapDisplay delegate, final byte[] data) {
+    protected void handlePictureData(final BitmapDisplay delegate, final byte[] data)
+
+    {
+
+        Log.d("KTB2 CALL" , "handlePictureData");
+
     }
 
     /**
@@ -117,6 +131,8 @@ public abstract class AbstractCameraMode {
      * A subclass can override and customize the behavior.
      */
     protected void didHandlePictureEvent() {
+        Log.d("KTB2 CALL" , "didHandlePictureEvent");
+
     }
 
     /**
@@ -147,6 +163,8 @@ public abstract class AbstractCameraMode {
      * A subclass can override and customize the behavior.
      */
     protected void willCloseCamera() {
+        Log.d("KTB2 CALL" , "willCloseCamera");
+
     }
 
     /**
@@ -155,6 +173,8 @@ public abstract class AbstractCameraMode {
      * @param display   The new delegate object.
      */
     public final void setBitmapDisplay(final BitmapDisplay display) {
+        Log.d("KTB2 CALL" , "setBitmapDisplay");
+
         painter.setBitmapDisplay(display);
     }
 
@@ -182,13 +202,28 @@ public abstract class AbstractCameraMode {
      *
      * @param ev    The camera event.
      */
+
+    byte[] global_img_data;
+
     private void handlePictureEvent(final CameraEvent ev) {
+        Log.d("KTB2 CALL" , "handlePictureEvent");
         byte[] data = ev.getData();
+        global_img_data = data;
+
+
+
+                //BitmapFactory.decodeByteArray(imageData, 0, imageData.length);
+
+        Log.d("KTB2", "Inside Abstract Camera Mode" + ev.toString());
         if (data == null || data.length == 0) {
             return;
         }
         saver.save(data);
         handlePictureData(painter, data);
+
+        Log.d("KTB2 CALL", "handlePictureEvent // CameraEvent To String" + ev.toString());
+
+        painter.paint(getMessageList(), ev, cameraOpened);
     }
 
     /**
@@ -198,6 +233,8 @@ public abstract class AbstractCameraMode {
      * @param ev    The camera event.
      */
     public final void handleCameraEvent(final CameraEvent ev) {
+             Log.d("KTB2 CALL" , "handleCameraEvent");
+
         willHandleEvent(ev);
         if (ev.getErrorStatus() != 0) {
             Log.d(Constants.LOG_TAG, "error code = " + ev.getErrorStatus());
@@ -211,7 +248,12 @@ public abstract class AbstractCameraMode {
      * Updates the display on the device.
      */
     public final void updateDisplay() {
-        painter.paint(getMessageList());
+        Log.d("KTB2 CALL" , "updateDisplay");
+
+
+        // painter.setBitmapDisplay(BitmapDisplay display);
+
+      //  painter.paint(getMessageList() , global_img_data , cameraOpened);
     }
 
     /**
@@ -219,14 +261,25 @@ public abstract class AbstractCameraMode {
      *
      * @param utils     The instance of the Control Utility class.
      */
+    public int ktb_opc = 0;
     protected final void openCamera(final SmartEyeglassControlUtils utils) {
         try {
+            Log.d("KTB2 CALL" , "openCamera");
+            Log.d("KTB2 CALL" , "openCamera // " + cameraOpened );
+            Log.d("KTB2 CALL" , "openCamera // " + cameraOpened );
+            ktb_opc = 1;
+
             willOpenCamera(utils);
         } catch (ControlCameraException e) {
             Log.d(Constants.LOG_TAG, "Failed to register listener", e);
         }
         Log.d(Constants.LOG_TAG, "onResume: Registered listener");
         cameraOpened = true;
+    }
+    public int ktb_camera_check()
+    {
+
+        return ktb_opc;
     }
 
     /**
@@ -235,6 +288,8 @@ public abstract class AbstractCameraMode {
      * @param utils     The instance of the Control Utility class.
      */
     public final void closeCamera(final SmartEyeglassControlUtils utils) {
+        Log.d("KTB2 CALL" , "closeCamera");
+
         if (!cameraOpened) {
             return;
         }

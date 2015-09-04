@@ -61,25 +61,35 @@ public abstract class AbstractStillMode extends AbstractCameraMode {
 
     @Override
     protected final void willHandleEvent(final CameraEvent ev) {
+        Log.d("KTB2 CALL" , "willHandleEvent");
+
         Log.d(Constants.LOG_TAG, "Camera Event coming: " + ev);
     }
 
     @Override
     public final int getPreferenceId() {
+        Log.d("KTB2 CALL" , "getPreferenceId");
+
         return R.string.preference_key_resolution_still;
     }
 
     @Override
     protected final List<String> getMessageList() {
+
+        Log.d("KTB2 CALL" , "getMessageList");
+
         return MESSAGE_LIST;
     }
 
     @Override
     public final void toggleState(final SmartEyeglassControlUtils utils) {
+        Log.d("KTB2 CALL" , "ToggleState");
+
         if (isCameraClosed()) {
             openCamera(utils);
         }
         Log.d(Constants.LOG_TAG, "Select button pressed -> cameraCapture()");
+
         utils.requestCameraCapture();
     }
 }

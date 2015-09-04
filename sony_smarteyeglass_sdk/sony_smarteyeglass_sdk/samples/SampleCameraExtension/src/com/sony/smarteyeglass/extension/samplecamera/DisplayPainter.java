@@ -36,16 +36,21 @@ import java.util.List;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Camera;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.DisplayMetrics;
+import android.util.Log;
+
+import com.sony.smarteyeglass.extension.util.CameraEvent;
 
 /**
  * Displays a bitmap with provided text information.
  */
-public final class DisplayPainter implements BitmapDisplay {
+public final class DisplayPainter implements BitmapDisplay  {
 
     /** The default text size. */
     private static final int TEXT_SIZE = 16;
@@ -69,6 +74,8 @@ public final class DisplayPainter implements BitmapDisplay {
      *            The application context.
      */
     public DisplayPainter(final Context context) {
+
+        Log.d("KTB2 CALL" , "DisplayPainter");
         ScreenSize size = new ScreenSize(context);
         Resources res = context.getResources();
         pointX = res.getInteger(R.integer.POINT_X);
@@ -83,6 +90,10 @@ public final class DisplayPainter implements BitmapDisplay {
      *            The delegate to display a bitmap.
      */
     public void setBitmapDisplay(final BitmapDisplay display) {
+
+        Log.d("KTB2 CALL" , "setBitmapDisplay");
+
+        Log.d("KTB2", "Setting Bit map display");
         this.display = display;
     }
 
@@ -92,7 +103,38 @@ public final class DisplayPainter implements BitmapDisplay {
      * @param list
      *            The list of messages.
      */
-    public void paint(final List<String> list) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public void paint(final List<String> list , CameraEvent ev, boolean cameraOpened) {
+
+        Log.d("KTB2 CALL" , "paint");
+
+
         final Bitmap textBitmap = createBitmap();
         final Canvas canvas = new Canvas(textBitmap);
         final Paint paint = new Paint();
@@ -103,11 +145,66 @@ public final class DisplayPainter implements BitmapDisplay {
         final int x = pointX;
         int y = pointY;
         for (String m : list) {
+
             canvas.drawText(m, x, y, paint);
             y += pointY;
         }
+
+        //Bitmap ktb;
+        //ktb =
+        //textBitmap = textBitmap + ktb;
+
+        Log.d("KTB2 CALL" , "Arrived to changes by KTB");
+
+        Log.d("KTB2 CALL" , "Passed data of CameraOpened = " + cameraOpened);
+        if (cameraOpened)
+        {
+            Log.d("KTB2 CALL" , "Imagedata info = " + ev.toString());
+
+        }
+
+//        AbstractCameraMode.ktb_camera_check
+
+        Bitmap bmp = createBitmap();
+        //ktb_image_bitmap
+
+        Log.d("KTB2 CALL" , "Checking Image Data");
+
+
+
+       // Log.d("KTB2 CALL" , imageData.toString());
+
+        Log.d("KTB2 CALL" , "Trying Bitmap Factory, Decode Byte Array");
+
+       // bmp = BitmapFactory.decodeByteArray(imageData, 0 , imageData.length);
+        //textBitmap = BitmapFactory.decodeByteArray()
         display.displayBitmap(textBitmap);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Displays the specified bitmap.
@@ -117,11 +214,16 @@ public final class DisplayPainter implements BitmapDisplay {
      */
     @Override
     public void displayBitmap(final Bitmap bitmap) {
+
+
+        Log.d("KTB2 CALL" , "displayBitmap");
+
         final Bitmap captureBitmap = createBitmap();
         final Canvas canvas = new Canvas(captureBitmap);
         final Paint paint = new Paint();
         paint.setStyle(Paint.Style.FILL);
 
+        Log.d("KTB2", "Displaying BITMAP");
         canvas.drawBitmap(bitmap, rect, rect, null);
         display.displayBitmap(captureBitmap);
     }
@@ -132,9 +234,19 @@ public final class DisplayPainter implements BitmapDisplay {
      * @return A bitmap.
      */
     private Bitmap createBitmap() {
+
+        Log.d("KTB2 CALL" , "createBitmap");
+
         final int width = rect.width();
         final int height = rect.height();
+        String widy = String.valueOf(width);
+        String highy = String.valueOf(height);
+
+        Log.d("KTB2", "width = " + widy);
+        Log.d("KTB2", "height = " + highy);
+
         Bitmap b = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+
         b.setDensity(DisplayMetrics.DENSITY_DEFAULT);
         return b;
     }
